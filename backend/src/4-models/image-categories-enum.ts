@@ -1,0 +1,23 @@
+ enum imageCategories {
+    backgrounds = 'backgrounds',
+     fashion = 'fashion',
+     nature = 'nature',
+     science = 'science',
+     education = 'education',
+     feelings = 'feelings',
+     health = 'health',
+     people = 'people',
+     religion = 'religion',
+     places = 'places',
+     animals = 'animals',
+     industry = 'industry',
+     computer = 'computer',
+     food = 'food',
+     sports = 'sports',
+     transportation = 'transportation',
+     travel = 'travel',
+     buildings = 'buildings',
+     business = 'business',
+     music = 'music',
+}
+export default imageCategories
