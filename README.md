@@ -25,7 +25,8 @@ parameters, based on external api.
 | **REST API**        | Using the Express library to read (get) and update (post) data. |
 
 
-
+**N-Tiers Architecture** 
+![N-Tiers-Architecture](/frontend/assets/n-triers-architecture.png)
 
 ## Tech Stack
 
