@@ -20,13 +20,12 @@ parameters, based on external api.
 
 | **Global State** | Management with Redux.|
 | **AsyncStorage** | Token storage.|
-| **complexity O(1)** | Creating function with a complexity of O(1), see an explained example in path "Service/ImagesCollectionService"|
+| **complexity O(1)** | Creating function with a complexity of O(1), see an explained example in path "Service/ImagesCollectionService".|
 | **Authentication** | User identity verification. |
 | **REST API** | Using the Express library to read (get) and update (post) data.|
 
 
-**N-Tiers Architecture** 
-![N-Tiers-Architecture](/frontend/assets/n-triers-architecture.png)
+
 
 ## Tech Stack
 
