@@ -69,6 +69,8 @@ Start the server
 **The following commands are only for frontend layers** 
 Run the app
 
+Go to file Config.ts located frontend/src/Utils/Config and change the domain from localhost to your IP address.
+
 ```bash
 npx expo start
 ```

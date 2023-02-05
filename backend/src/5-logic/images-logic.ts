@@ -6,7 +6,9 @@ import { IImageModel } from "../4-models/image-model";
 
 // Get images items by params = {key,category,per_page,page,order}
 async function getImagesItemsByParams(params:IApiServerParamsModel): Promise<any> {
-       
+  
+    if(!params.per_page) params.per_page = 9 //If no per_page is set then the default is 9.
+
     const valid = clientValidateParamsData(params)
         if (valid.error) {
             throw new ValidationError(valid.error.message)
@@ -32,6 +34,7 @@ async function getImagesItemsByParams(params:IApiServerParamsModel): Promise<any
             }
             imagesCollection.push(imageItem)
         });
+        
 
         return imagesCollection
 }

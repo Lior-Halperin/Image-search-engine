@@ -1,7 +1,9 @@
 
+// localhost refers to the device itself, not the emulator or physical device where the app is running.
+// you should use the IP address of your development machine instead of "localhost".
 export enum urlDomain {
-    protocol = 'https://',
-    domain = '8d60-5-22-128-70.eu.ngrok.io/'
+    protocol = 'http://',
+    domain = 'localhost:3001/'
 }
 
 export interface IConfig {
@@ -25,10 +27,7 @@ const environments:any = {
         imagesCategories:`${urlDomain.protocol}`+`${urlDomain.domain}`+'api/images/categories-list'
     },
     production: {
-        baseURL: `${urlDomain.protocol}`+`${urlDomain.domain}`+'api/',
-        loginURL: `${urlDomain.protocol}`+`${urlDomain.domain}`+'api/auth/login',
-        imagesURL: `${urlDomain.protocol}`+`${urlDomain.domain}`+'api/images/',
-        imagesCategories:`${urlDomain.protocol}`+`${urlDomain.domain}`+'api/images/categories-list'
+
     }
   }
   

@@ -55,7 +55,6 @@ class ImagesService {
 
         store.dispatch(fetchImagesCollectionAction(imagesCollection)); // Add to Redux.
 
-        console.log(response)
 
       return response
 

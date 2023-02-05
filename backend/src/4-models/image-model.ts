@@ -11,7 +11,7 @@ export interface IImageModel {
     comments: number,
     category: imageCategories;
     page: number;
-    per_page: number | 20;
-    order: OrderParams | 'popular';
+    per_page: number ;
+    order: OrderParams ;
 }
 

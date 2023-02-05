@@ -6,6 +6,3 @@ export interface IParamsModel  {
      per_page?: number ;
      order?: OrderParams;
 }
-
-
-
