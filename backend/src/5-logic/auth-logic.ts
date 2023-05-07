@@ -6,7 +6,6 @@ import { UnauthorizedError } from "../4-models/error-models";
 
 
 async function login(credentials: IClientCredentialModel): Promise<string> {
-console.log(credentials)
     // 1. Joi Validation
     const valid = clientValidateCredentialData(credentials)
     if (valid.error) {

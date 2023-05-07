@@ -30,7 +30,7 @@ parameters, based on external api.
 
 ## Tech Stack
 
-**Client:** React Native, React Native Elements, TypeScript, Redux, JWT, Axios, Ngrok, AsyncStorage, expo .
+**Client:** React Native, React Native Elements, TypeScript, Redux, JWT, Axios, AsyncStorage, expo .
 
 **Server:** Node.js, Express, CORS, JWT, Axios, Joi.
 

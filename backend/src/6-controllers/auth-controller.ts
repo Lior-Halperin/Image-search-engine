@@ -9,6 +9,7 @@ const router = express.Router();
 // POST http://localhost:3001/api/auth/login
 router.post("/auth/login", async (request: Request, response: Response, next: NextFunction) => {
     try{
+        console.log('fff')
         //  Create credentials object
         const credentials: IClientCredentialModel = (request.body);
 

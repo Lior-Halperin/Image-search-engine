@@ -9,13 +9,16 @@ import authController from "./6-controllers/auth-controller";
 import CategoriesController from'./6-controllers/categories-controller';
 import ImagesController from './6-controllers/images-controller';
 
+// Create server:
 const expressServer = express();
+
 //  Backend approval to browse AJAX to backend API
 if (config.isDevelopment) expressServer.use(cors());
 
 // Tell express to extract json object from request body into request.body variable:
 expressServer.use(express.json());
 
+// Transfer request to the controllers:
 expressServer.use("/api",authController);
 
 expressServer.use("/api", ImagesController);

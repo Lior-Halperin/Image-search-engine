@@ -31,7 +31,7 @@ export default function ImagesListComponent(): JSX.Element {
       unsubscribe();
     };
   }, []);
-  const [visible1, setVisible1] = useState(false);
+  const [visible1, setVisible1] = useState<boolean>(false);
   const [displayDialog,setDisplayDialog] = useState<IImageModel[]>([])
 
   const toggleDialog1 = () => {

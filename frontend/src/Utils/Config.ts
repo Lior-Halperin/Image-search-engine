@@ -3,7 +3,7 @@
 // you should use the IP address of your development machine instead of "localhost".
 export enum urlDomain {
     protocol = 'http://',
-    domain = 'localhost:3001/'
+    domain = '192.168.1.102:3001/'
 }
 
 export interface IConfig {

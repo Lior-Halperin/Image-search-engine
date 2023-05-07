@@ -10,6 +10,7 @@ const router = express.Router();
 // GET http://localhost:3001/api/images/sports/1?per_page=8
 router.get("/images/:category/:page",verifyLoggedIn,clientRequestConstructor, async (request: Request, response: Response, next: NextFunction) => {
     try {
+        
         const params:IApiServerParamsModel = request.body
         const result = await logic.getImagesItemsByParams(params)
 

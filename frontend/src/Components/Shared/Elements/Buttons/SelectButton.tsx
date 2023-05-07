@@ -12,7 +12,7 @@ import { fetchSelectedCategoryAction } from "../../../../Redux/selectedCategoryS
 
 export default function  SelectButton(): JSX.Element  {
 
-//   // state to handle Categories:
+   // state to handle Categories:
   const [categoriesList, setCategories] = useState<IImageCategoriesModel[]>([]);
   // state to handle selected category:
   const [selectedCategory, setSelectedCategory] = useState<IParamsModel[]>([]);

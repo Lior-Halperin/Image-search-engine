@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import Layout from "./src/Components/LayoutArea/Layout";
 import store from "./src/Redux/Store";
 import authService from "./src/Service/AuthService";
@@ -12,21 +13,28 @@ export default function App() {
     useEffect(() => {
 
         // Default login when component starts: 
-        const login = async()=> await authService.login({password:'1234',userName:'lior'})
-        login().then(()=>setIsLogin(store.getState().authState.token))
-        
+        authService.login({ password: "1234", userName: "lior" })
+        .then(() => {
+          setIsLogin(store.getState().authState.token)
+      })
+      .catch(err => alert(err.message));
+      
+
     }, []);
 
     // Create interceptors:
     interceptorService.createInterceptors()
 
   return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaProvider style={styles.container}>
+
         {isLogin&&
         
         <Layout/>
+
         }
-      </SafeAreaView>
+
+      </SafeAreaProvider>
   );
 }
 

@@ -13,6 +13,7 @@ import OrderParams from "../4-models/order-params-enum";
         });
         return clientCredentialSchema.validate(credential)
     }
+    
     export const clientValidateParamsData = (params:IApiServerParamsModel) => {
 
         const  clientParamsSchema = Joi.object <IApiServerParamsModel>({

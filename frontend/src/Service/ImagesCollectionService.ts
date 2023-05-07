@@ -30,7 +30,7 @@ class ImagesService {
      // 3.1: If there is no data at all on the requested category in redux:
       if ( !isCategory ) { 
         // 3.1.1: Get data from the server
-        const serverResponse = await axios.get<IImageModel[]>(config.imagesURL+paramsRequest.category+'/'+paramsRequest.page,{params:paramsRequest});
+        const serverResponse = await axios.get<IImageModel[]>(config.imagesURL+paramsRequest.category+'/'+paramsRequest.page,{params:paramsRequest}); // delete ->,{params:paramsRequest}
         response = serverResponse.data
         // 3.1.2: Create a Map function with a [key = page,value = [{images model},{}...]]
          toMap.set(paramsRequest.page,response)

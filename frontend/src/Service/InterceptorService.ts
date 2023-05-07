@@ -9,7 +9,6 @@ class InterceptorService {
         
         // Send token for each request: 
         axios.interceptors.request.use((request:any) => {
-            
 
             if(authService.isLoggedIn()) {
                 request.headers = {
