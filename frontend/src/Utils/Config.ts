@@ -1,6 +1,6 @@
 import UrlDomainModel from "../Models/UrlDomainModel"
 
-const urlDomain: UrlDomainModel = new UrlDomainModel('https://88a2-2a0d-6fc0-2a88-d700-3d38-bbcf-686-6ab5.ngrok-free.app') // For development or testing use ngrok (for example: https://88a2-2a0d-6fc0-2a88-d700-3d38-bbcf-686-6ab5.ngrok-free.app)
+const urlDomain: UrlDomainModel = new UrlDomainModel('enter your ngrok URL') // For development or testing use ngrok (for example: https://88a2-2a0d-6fc0-2a88-d700-3d38-bbcf-686-6ab5.ngrok-free.app)
 export interface IConfig {
     baseURL:string
     loginURL: string
