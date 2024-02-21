@@ -15,7 +15,7 @@ export default function App() {
         // Default login when component starts: 
         authService.login({ password: "1234", userName: "lior" })
         .then(() => {
-          setIsLogin(store.getState().authState.token)
+            setIsLogin(store.getState().authState.token)
       })
       .catch(err => alert(err.message));
       
@@ -26,6 +26,7 @@ export default function App() {
     interceptorService.createInterceptors()
 
   return (
+      // The SafeAreaProvider component will detect if the app is running on a device with notches, if so, ensure the content isn't hidden behind any hardware elements
       <SafeAreaProvider style={styles.container}>
 
         {isLogin&&

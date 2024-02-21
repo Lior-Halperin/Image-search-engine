@@ -14,6 +14,5 @@ export const apiRequestConstructor = (params: IApiServerParamsModel) => {
     else {
         apiRequest = params.key + '&q=' + params.category
     }
-    console.log('apiRequestConstructor:',apiRequest)
     return apiRequest
 }

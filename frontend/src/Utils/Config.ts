@@ -1,11 +1,6 @@
+import UrlDomainModel from "../Models/UrlDomainModel"
 
-// localhost refers to the device itself, not the emulator or physical device where the app is running.
-// you should use the IP address of your development machine instead of "localhost".
-export enum urlDomain {
-    protocol = 'http://',
-    domain = '192.168.1.102:3001/'
-}
-
+const urlDomain: UrlDomainModel = new UrlDomainModel('https://88a2-2a0d-6fc0-2a88-d700-3d38-bbcf-686-6ab5.ngrok-free.app') // For development or testing use ngrok (for example: https://88a2-2a0d-6fc0-2a88-d700-3d38-bbcf-686-6ab5.ngrok-free.app)
 export interface IConfig {
     baseURL:string
     loginURL: string
