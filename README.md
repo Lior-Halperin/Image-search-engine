@@ -15,14 +15,13 @@ parameters, based on external api.
 
 ## Methods
 
-| Method              | Explanation                                                                                        |                             
+| Method              | Explanation                                                                                                           |                             
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------|
-
-| **Global State**    | Management with Redux. |
-| **AsyncStorage**    | Token storage. |
-| **complexity O(1)** | Creating function with a complexity of O(1), see an explained example in path "Service/ImagesCollectionService". |
-| **Authentication**  | User identity verification. |
-| **REST API**        | Using the Express library to read (get) and update (post) data. |
+| **Global State**    | Management with Redux.                                                                                                |
+| **AsyncStorage**    | Token storage.                                                                                                        |
+| **complexity O(1)** | Creating function with a complexity of O(1), see an explained example in path "Service/ImagesCollectionService".      |
+| **Authentication**  | User identity verification.                                                                                           |
+| **REST API**        | Using the Express library to read (get) and update (post) data.                                                       |
 
 
 **N-Tiers Architecture** 
@@ -43,23 +42,48 @@ Clone the project
 ```
 **The following commands must be applied for both layers, frontend and backend.**
 
-Go to the project directory
+Go to the project directory:
 
 ```bash
   cd Image-search-engine\enter the layer name
 ```
 
-Install dependencies
+Install dependencies:
 
 ```bash
   npm install
 ```
 
+Install expo-cli:
+
 ```bash
   npm install -g expo-cli
 ```
+**Use ngrok**
+
+Install ngrok:
+
+https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip
+
+Open your command line tnd navigate ti the ngrok folder:
+
+```bash
+   cd your path\ngrok
+```
+
+Create a secure public URL for port 3001 web server:
+
+```bash
+   ngrok http 3001
+```
+
+Go to file Config.ts located frontend/src/Utils/Config and use the ngrok URL in the appropriate place.
 
 **The following commands are only for backend layers** 
+
+```bash
+   cd Image-search-engine\backend
+```
 Start the server
 
 ```bash
@@ -69,8 +93,10 @@ Start the server
 **The following commands are only for frontend layers** 
 Run the app
 
-Go to file Config.ts located frontend/src/Utils/Config and change the domain from localhost to your IP address.
+```bash
+   cd Image-search-engine\frontend
 
+```
 ```bash
 npx expo start
 ```
